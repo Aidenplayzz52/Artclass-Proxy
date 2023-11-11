@@ -1,0 +1,19 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install express http-proxy-middleware && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "request": "^2.88.2",
+    "shelljs": "^0.8.5"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="q">Enter a URL:</label>
+        <input type="text" id="q" name="q">
+        <button type="button" onclick="changeInputValue()">Change Value</button>
+    </form>
+
+    <script>
+        function changeInputValue() {
+            var inputElement = document.getElementById('q');
+            var inputValue = inputElement.value;
+            var currentUrl = new URL(window.location.href);
+            currentUrl.searchParams.set('q', inputValue);
+            window.location.href = currentUrl.toString();
+        }
+      </script>
+</body>
+</html>
